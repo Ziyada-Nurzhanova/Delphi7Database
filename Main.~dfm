@@ -1,6 +1,6 @@
 object fName: TfName
-  Left = 249
-  Top = 149
+  Left = 298
+  Top = 190
   Width = 870
   Height = 450
   Caption = #1040#1073#1080#1090#1091#1088#1080#1077#1085#1090#1099
@@ -118,7 +118,6 @@ object fName: TfName
       Width = 852
       Height = 210
       Align = alClient
-      DataSource = fDM.dsApplicantsData
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
@@ -140,7 +139,6 @@ object fName: TfName
       Width = 852
       Height = 137
       Align = alClient
-      DataSource = fDM.dsEvaluationsData
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText

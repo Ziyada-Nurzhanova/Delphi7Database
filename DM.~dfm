@@ -1,0 +1,11 @@
+object fDM: TfDM
+  OldCreateOrder = False
+  Left = 330
+  Top = 166
+  Height = 304
+  Width = 341
+  object con1: TADOConnection
+    Left = 32
+    Top = 24
+  end
+end

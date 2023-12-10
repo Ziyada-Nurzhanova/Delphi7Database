@@ -35,9 +35,6 @@ var
 
 implementation
 
-uses
-  DM;
-
 {$R *.dfm}
 
 end.
