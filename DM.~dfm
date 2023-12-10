@@ -1,11 +1,64 @@
 object fDM: TfDM
   OldCreateOrder = False
-  Left = 330
-  Top = 166
-  Height = 304
-  Width = 341
+  Left = 449
+  Top = 217
+  Height = 317
+  Width = 325
   object con1: TADOConnection
-    Left = 32
-    Top = 24
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=applicants.mdb;Pers' +
+      'ist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 24
+    Top = 16
+  end
+  object tblApplicantsData: TADOTable
+    Active = True
+    Connection = con1
+    CursorType = ctStatic
+    TableName = 'applicants'
+    Left = 72
+    Top = 48
+  end
+  object tblFacultiesData: TADOTable
+    Connection = con1
+    TableName = 'faculties'
+    Left = 72
+    Top = 104
+  end
+  object tblSpecialtiesData: TADOTable
+    Connection = con1
+    TableName = 'specialties'
+    Left = 72
+    Top = 160
+  end
+  object tblGradesData: TADOTable
+    Connection = con1
+    TableName = 'grades'
+    Left = 72
+    Top = 216
+  end
+  object dsApplicants: TDataSource
+    DataSet = tblApplicantsData
+    Left = 176
+    Top = 48
+  end
+  object dsFaculties: TDataSource
+    DataSet = tblFacultiesData
+    Left = 176
+    Top = 104
+  end
+  object dsSpecialties: TDataSource
+    DataSet = tblSpecialtiesData
+    Left = 176
+    Top = 160
+  end
+  object dsGrades: TDataSource
+    DataSet = tblGradesData
+    Left = 176
+    Top = 216
   end
 end

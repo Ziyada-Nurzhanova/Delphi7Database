@@ -8,6 +8,14 @@ uses
 type
   TfDM = class(TDataModule)
     con1: TADOConnection;
+    tblApplicantsData: TADOTable;
+    tblFacultiesData: TADOTable;
+    tblSpecialtiesData: TADOTable;
+    tblGradesData: TADOTable;
+    dsApplicants: TDataSource;
+    dsFaculties: TDataSource;
+    dsSpecialties: TDataSource;
+    dsGrades: TDataSource;
   private
     { Private declarations }
   public
